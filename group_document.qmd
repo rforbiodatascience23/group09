@@ -112,6 +112,7 @@ p2 <- gravier_estimates |>
     caption = "Data from DOI: 10.1002/gcc.20820")
 ```
 
+
 # s204692 - Einstein
 
 ```{r}
@@ -132,6 +133,7 @@ bananas |> nchar()
 
 # s225084 - Masha
 
+
 # s231820 - Silvia
 
 ```{r}
@@ -141,3 +143,4 @@ bananas |> nchar()
 ```{r}
 # block #2
 ```
+
