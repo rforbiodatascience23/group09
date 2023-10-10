@@ -5,6 +5,6 @@ format: html
 
 # s204581 - Magnus
 # s204692 - Einstein
-bananas <- c("banana1", "banana2", "banana")
+bananas <- c("banana1", "banana2", "banana3")
 # s225084 - Masha
 # s231820 - Silvia
