@@ -4,57 +4,6 @@ format: html
 ---
 
 # s204581 - Magnus
-load(file = "/net/pupil1/home/people/s204581/projects/r_for_bio_data_science/data/_raw/gravier.RData")
-
-gravier_estimates |>
-  filter(is_significant == "yes") |> 
-  select(gene, p.value, q.value)
-
-pl <- gravier_estimates |> 
-  filter(is_significant == "yes") |> 
-  ggplot(aes(x = estimate,
-             y = fct_reorder(gene, estimate),
-             xmin = conf.low,
-             xmax = conf.high)) +
-  geom_vline(xintercept = 0) +
-  geom_errorbarh() +
-  geom_point() +
-  theme_minimal(base_size = 16) +
-  theme(plot.title = element_text(hjust = 1)) +
-  labs(x = "Estimates (95%CIs)",
-       y = "",
-       title = "Genes Associated with Early Metastasis in Small Node-Negative Breast Carcinoma",
-       caption = "Data from DOI: 10.1002/gcc.20820")
-
-library("ggrepel")
-pl <- gravier_estimates |>
-  mutate(lbl = case_when(
-    is_significant == "yes" ~ gene,
-    is_significant == "no" ~ "")) |> 
-  ggplot(aes(x = estimate,
-             y = -log10(p.value),
-             colour = is_significant,
-             label = lbl)) +
-  geom_point(size = 1,
-             alpha = 0.5) +
-  geom_text_repel(size = 4,
-                  max.overlaps = 20) +
-  geom_hline(yintercept = 0) +
-  theme_minimal(base_size = 16) +
-  theme(
-    plot.title = element_text(hjust = 1),
-    plot.subtitle = element_text(hjust = 1),
-    legend.position = "none") +
-  labs(
-    x = "Estimates",
-    y = "-log10(p)",
-    title = "Genes Associated with Early Metastasis in Small Node-Negative Breast Carcinoma",
-    subtitle = "Genes highlighted in turquoise were significant after multiple testing correction",
-    caption = "Data from DOI: 10.1002/gcc.20820")
-
-
-
-
 
 # s204692 - Einstein
 bananas <- c("banana1", "banana2", "banana")
