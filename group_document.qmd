@@ -7,6 +7,7 @@ format: html
 
 ```{r}
 library("tidyverse")
+library("ggrepel")
 ```
 
 ```{r}
@@ -37,7 +38,7 @@ pl <- gravier_estimates |>
        title = "Genes Associated with Early Metastasis in Small Node-Negative Breast Carcinoma",
        caption = "Data from DOI: 10.1002/gcc.20820")
 
-library("ggrepel")
+
 pl <- gravier_estimates |>
   mutate(lbl = case_when(
     is_significant == "yes" ~ gene,
