@@ -116,6 +116,6 @@ p2 <- gravier_estimates |>
 ```{r}
 bananas <- c("banana1", "banana2", "banana3")
 ```
-1
+
 # s225084 - Masha
 # s231820 - Silvia
