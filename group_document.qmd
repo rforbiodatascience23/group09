@@ -118,6 +118,11 @@ bananas <- c("banana1", "banana2", "banana3")
 ```
 
 # s225084 - Masha
+## New feature
+```{r}
+dog_names <- c("Jon", "Wilma", "Henrik", "Bodil")
+```
+
 # s231820 - Silvia
 
 ```{r}
