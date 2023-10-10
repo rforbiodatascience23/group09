@@ -66,6 +66,7 @@ gravier_estimates <- gravier_estimates |>
          is_significant = case_when(q.value <= 0.05 ~ "yes",
                                     q.value > 0.05 ~ "no"))
 ```
+#Plots
 ```{r}
 pl <- gravier_estimates |> 
   filter(is_significant == "yes") |> 
@@ -109,6 +110,7 @@ p2 <- gravier_estimates |>
     subtitle = "Genes highlighted in turquoise were significant after multiple testing correction",
     caption = "Data from DOI: 10.1002/gcc.20820")
 ```
+
 
 
 # s204692 - Einstein
