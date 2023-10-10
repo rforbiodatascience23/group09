@@ -57,6 +57,10 @@ pl <- gravier_estimates |>
 
 
 # s204692 - Einstein
+
+```{r}
 bananas <- c("banana1", "banana2", "banana3")
+```
+
 # s225084 - Masha
 # s231820 - Silvia
