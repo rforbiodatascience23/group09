@@ -128,3 +128,13 @@ bananas <- c("banana1", "banana2", "banana3")
 # block #2
 ```
 
+###New Analysis
+
+```{r}
+# data
+```
+
+```{r}
+# code
+```
+
