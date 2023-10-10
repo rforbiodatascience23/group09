@@ -1,0 +1,9 @@
+---
+title: "Group Document"
+format: html
+---
+
+# s204581 - Magnus
+# s204692 - Einstein
+# s225084 - Masha
+# s231820 - Silvia
