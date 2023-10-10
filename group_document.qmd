@@ -57,5 +57,6 @@ pl <- gravier_estimates |>
 
 
 # s204692 - Einstein
+bananas <- c("banana1", "banana2", "banana")
 # s225084 - Masha
 # s231820 - Silvia
