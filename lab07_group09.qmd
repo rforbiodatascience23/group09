@@ -8,9 +8,9 @@ format:
 
 ## Load libraries and data
 ```{r}
-library(tidyverse)
-library(broom)  # devtools::install_github("tidymodels/broom")
-library(cowplot)
+library("tidyverse")
+library("broom")  # devtools::install_github("tidymodels/broom")
+#library("cowplot")
 ```
 
 ```{r}
