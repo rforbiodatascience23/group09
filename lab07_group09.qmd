@@ -1,0 +1,7 @@
+---
+title: "Lab 07 Assignment: Group 09"
+author: "Oliver s204692, Magnus s204581, Silvia s231820, Lucio s225031, Masha s225084"
+format:
+  html:
+    embed-resources: true
+---
